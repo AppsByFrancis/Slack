@@ -2,7 +2,7 @@
   "name": "webscraping",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,13 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@slack/events-api": "^3.0.1",
-    "@slack/web-api": "^6.9.0",
+    "@slack/bolt": "^3.13.3",
     "axios": "^1.4.0",
     "cheerio": "^1.0.0-rc.12",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "https": "^1.0.0",
-    "iconv-lite": "^0.6.3"
+    "iconv-lite": "^0.6.3",
+    "node-schedule": "^2.1.1"
   }
 }
