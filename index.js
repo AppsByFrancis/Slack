@@ -45,7 +45,7 @@ const vidle = () => {
         
         // Posting to Slack outside of the .each() function
         app.client.chat.postMessage({
-            channel: 'C05NT57ANBA',
+            channel: process.env.CHANNEL,
             token: process.env.TOKEN,
             text: `Dnešní menu v restauraci Smíchovské vidličky a nože:\n\n${articlesToString(articles)}` // Convert the object to a custom string
         }).catch(error => {
