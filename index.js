@@ -63,8 +63,8 @@ const corleone = () => {
         const data = iconv.decode(corruptHtml, 'windows-1250');
         const utf8Data = iconv.encode(data, 'utf-8').toString();
         const $ = cheerio.load(utf8Data);
+        
         const articles = [];
-        const pepa = [];
         
         // Iterating over the elements
         $('.popup-gallery', utf8Data).first().each(function () {
