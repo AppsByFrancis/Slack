@@ -11,7 +11,8 @@ const CORLEONE = 'https://www.menicka.cz/2219-corleone-andel-.html';
 
 const app = new App({
     token: process.env.TOKEN,
-    signingSecret: process.env.SECRET
+    signingSecret: process.env.SECRET,
+    clientId: process.env.CLIENT
 })
 
 const asyncFunc = async () => {

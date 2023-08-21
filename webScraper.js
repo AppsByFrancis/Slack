@@ -35,4 +35,4 @@ axios.get(VIDLICKY_A_NOZE, {responseType: 'arraybuffer'} )
 //     })
 // })
 
-app.listen(process.env.PORT, () => console.log('server running'))
+app.listen(process.env.PORT || 3000, () => console.log('server running'))
