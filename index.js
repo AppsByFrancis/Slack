@@ -48,6 +48,7 @@ const vidle = () => {
         app.client.chat.postMessage({
             channel: process.env.CHANNEL,
             token: process.env.TOKEN,
+            clientId: process.env.SLACK_CLIENT_ID,
             text: `Dnešní menu v restauraci Smíchovské vidličky a nože:\n\n${articlesToString(articles)}` // Convert the object to a custom string
         }).catch(error => {
             console.error(error);
@@ -87,6 +88,7 @@ const corleone = () => {
         app.client.chat.postMessage({
             channel: 'C05NT57ANBA',
             token: process.env.TOKEN,
+            clientId: process.env.SLACK_CLIENT_ID,
             text: `Dnešní menu v restauraci Corleone Anděl:\n\n${articlesToString(articles)}` // Convert the object to a custom string
         }).catch(error => {
             console.error(error);
