@@ -110,8 +110,11 @@ function articlesToString(articles) {
     return result;
 }
 
-
-const job = schedule.scheduleJob('00 11 * * 1-5', function() {
+setInterval(() => {
     vidle();
     corleone()
+    
+}, 10000);
+
+const job = schedule.scheduleJob('00 11 * * 1-5', function() {
 });
